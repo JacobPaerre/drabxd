@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lommeregner</title>
+    <link rel="stylesheet" href="../styles/dropdown.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="../index.html">Startside</a>
+                <a href="#">Udregn areal</a>
+                <a href="../udregner/andengradsligning.html">Udregn andengradsligninger</a>
+            </div>
+        </div>
+    </header>
+    
+    <script src="../scripts/lommeregner.js"></script>
+    <h1>Areal udregner:</h1>
+    <br>
+    <span>Længde </span><input id="l1" onchange="Calculate()" type="number" placeholder="100">cm
+    <br>
+    <span>Højde </span><input id="h1" onchange="Calculate()" type="number" placeholder="100">cm
+    <br>
+    <p id="areal">Længde * Højde = </p>
+    
+<div id="footer">
+    <p style="text-align: center;">Jacob © 2018</p>
+</div>
+</body>
+</html>

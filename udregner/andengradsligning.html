@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lommeregner</title>
+    <link rel="stylesheet" href="../styles/dropdown.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <a href="../index.html">Startside</a>
+                <a href="../udregner/areal.html">Udregn areal</a>
+                <a href="#">Udregn andengradsligninger</a>
+            </div>
+        </div>
+    </header>
+    
+    <script src="../scripts/lommeregner.js"></script>
+    <h1>Andengradslignings udregner:</h1>
+    <br>
+    <span>A-værdi </span><input id="a1" onchange="Calculate2nd()" type="number" placeholder="2">
+    <br>
+    <span>B-værdi </span><input id="b1" onchange="Calculate2nd()" type="number" placeholder="3">
+    <br>
+    <span>C-værdi </span><input id="c1" onchange="Calculate2nd()" type="number" placeholder="5">
+    <br>
+    <p id="Diskriminant">Diskriminanten er: 0</p>
+    <span id="xv1">Rod 1 er: 0</span>
+        <br>
+    <span id="xv2">Rod 2 er: 0</span>
+    
+    
+<div id="footer">
+    <p style="text-align: center;">Jacob © 2018</p>
+</div>    
+</body>
+</html>
