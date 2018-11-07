@@ -35,7 +35,8 @@ header p {
 
 #inputareal {
     display: inline;
-    
+    bakcground-color: gray;
+    margin: 40px 40px 40px 40px;
 } 
 
 
