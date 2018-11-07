@@ -1,7 +1,3 @@
-var lh1;
-var height;
-var length;
-var answer;
 var av;
 var bv;
 var cv;
@@ -10,11 +6,11 @@ var Dsqrt;
 var x1;
 var x2;
 
-function Calculate() {
-    lengthheight();
-    answer = length * height;
-    document.getElementById('areal').innerHTML = "Arealet er:" "<strong>" + answer + "</strong>cm^2";
-    document.title = "Svar: " + answer + "cm"; 
+function ArealUdregn() {
+    var answer = document.getElementById("hareal").value * document.getElementById('lareal').value + " cm^2";
+    console.log("STATUS: H: " + document.getElementById('hareal').value + " - L: " + document.getElementById('lareal').value);
+
+    document.getElementById('arealresultat').value = answer;
 }
 
 function Calculate2nd() {
