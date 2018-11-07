@@ -16,21 +16,23 @@
             </div>
         </div>
     </header>
-    <h1>Hvordan regner man areal ud?</h1>
-    <p>
-    <script src="../scripts/lommeregner.js"></script>
-    <div id="udregner">
-    <h1>Areal udregner:</h1>
-    <br>
-        <div id="inputareal">
-            <input id="hareal" type="number" onchange="Calculate()" placeholder="Indtast højde">
-            <input id="lareal" type="number" onchange="Calculate()" placeholder="Indtast længde">
-            <p> = </p>
-            <input id="arealresultat" realonly placeholder="Svar">
-        </div>
+    <div id="sitecontent">
+        <h1>Hvordan regner man areal ud?</h1>
+        <p>Areal regnes ud ved at tage højden af dit objekt og gange det med længden af dit objekt:</p>
+        <p>Højde * Længde</p>
+        <br>
+        <script src="../scripts/lommeregner.js"></script>
+        <div id="udregner">
+            <div id="inputareal" align="center">
+                <h1>Areal udregner:</h1>
+                <input id="hareal" type="number" onchange="ArealUdregn()" placeholder="Indtast højde">
+                <input id="lareal" type="number" onchange="ArealUdregn()" placeholder="Indtast længde">
+                <p> = </p>
+                <input id="arealresultat" placeholder="Svar" readonly>
+            </div>
 
+        </div>
     </div>
-    
 <div id="footer">
     <p style="text-align: center;">Jacob © 2018</p>
 </div>
