@@ -9,20 +9,11 @@ var D;
 var Dsqrt;
 var x1;
 var x2;
-
-function lengthheight() {
-    length = document.getElementById('l1').value;
-    height = document.getElementById('h1').value;
-    lh1 = "Længde * Højde = " + length + " * " + height + " = ";
-}
-
 function Calculate() {
     lengthheight();
     answer = length * height;
-    document.getElementById('areal').innerHTML = lh1 + "<strong>" + answer + "</strong>cm^2";
-    console.log(answer);
+    document.getElementById('areal').innerHTML = "Arealet er:" "<strong>" + answer + "</strong>cm^2";
     document.title = "Svar: " + answer + "cm"; 
-    
 }
 
 function Calculate2nd() {
