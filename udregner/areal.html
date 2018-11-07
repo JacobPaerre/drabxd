@@ -21,11 +21,13 @@
     <script src="../scripts/lommeregner.js"></script>
     <h1>Areal udregner:</h1>
     <br>
-    <span>Længde </span><input id="l1" onchange="Calculate()" type="number" placeholder="100">cm
-    <br>
-    <span>Højde </span><input id="h1" onchange="Calculate()" type="number" placeholder="100">cm
-    <br>
-    <p id="areal"></p>
+    <div id="udregner">
+        <div id="inputareal">
+            <input id="hareal" type="number" onchange="Calculate()" placeholder="Indtast højde">
+            <input id="lareal" type="number" onchange="Calculate()" placeholder="Indtast længde">
+        </div>
+        
+    </div>
     
 <div id="footer">
     <p style="text-align: center;">Jacob © 2018</p>
