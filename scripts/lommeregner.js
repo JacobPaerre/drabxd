@@ -9,6 +9,7 @@ var D;
 var Dsqrt;
 var x1;
 var x2;
+
 function Calculate() {
     lengthheight();
     answer = length * height;
