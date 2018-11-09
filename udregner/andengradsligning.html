@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lommeregner</title>
+    <title>Lommeregner - andengradsligning</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styles/dropdown.css">
     <link rel="stylesheet" href="../styles/styles.css">
@@ -17,22 +17,32 @@
             </div>
         </div>
     </header>
-    
     <script src="../scripts/lommeregner.js"></script>
-    <h1>Andengradslignings udregner:</h1>
-    <br>
-    <span>A-værdi </span><input id="a1" onchange="Calculate2nd()" type="number" placeholder="2">
-    <br>
-    <span>B-værdi </span><input id="b1" onchange="Calculate2nd()" type="number" placeholder="3">
-    <br>
-    <span>C-værdi </span><input id="c1" onchange="Calculate2nd()" type="number" placeholder="5">
-    <br>
-    <p id="Diskriminant">Diskriminanten er: 0</p>
-    <span id="xv1">Rod 1 er: 0</span>
+    <div id="sitecontent">
+        <h1>Hvordan regner man en andengradsligning ud?</h1>
+        <p>En andengradslignign regnes ud ved først at finde D(iskriminanten)s værdi:</p>
+        <p>b^2 - 4ac</p>
         <br>
-    <span id="xv2">Rod 2 er: 0</span>
-    
-    
+        <script src="../scripts/lommeregner.js"></script>
+        <div id="udregner">
+            <div id="inputandengrads" align="center">
+                <h1>Andengradsligningsudregner:</h1>
+                <input id="atal" type="number" placeholder="Indtast a-værdi">
+                <input id="btal" type="number" placeholder="Indtast b-værdi">
+                <input id="ctal" type="number" placeholder="Indtast c-værdi">
+                <br>
+                <br>
+                <button class="udregn_knap" onclick="AndengradsUdregn()"> = </button>
+                <br>
+                <br>
+                <input id="andengradsdiskriminant" placeholder="Diskriminant" readonly>
+                <br>
+                <input id="andengradsresultat_x1" placeholder="Rod 1" readonly>
+                <input id="andengradsresultat_x2" placeholder="Rod 2" readonly>
+            </div>
+        </div>
+
+    </div>
 <div id="footer">
     <p style="text-align: center;">Jacob © 2018</p>
 </div>    
