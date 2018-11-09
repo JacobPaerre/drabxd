@@ -25,10 +25,14 @@
         <script src="../scripts/lommeregner.js"></script>
         <div id="udregner">
             <div id="inputareal" align="center">
-                <h1>Areal udregner:</h1>
+                <h1>Arealudregner:</h1>
                 <input id="hareal" type="number" onchange="ArealUdregn()" placeholder="Indtast højde">
                 <input id="lareal" type="number" onchange="ArealUdregn()" placeholder="Indtast længde">
-                <p> = </p>
+                <br>
+                <br>
+                <button class="udregn_knap" onclick="AndengradsUdregn()"> = </button>
+                <br>
+                <br>
                 <input id="arealresultat" placeholder="Svar" readonly>
             </div>
 
