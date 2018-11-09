@@ -1,43 +1,63 @@
-var av;
-var bv;
-var cv;
-var D;
-var Dsqrt;
-var x1;
-var x2;
-
 function ArealUdregn() {
     var answer = document.getElementById("hareal").value * document.getElementById('lareal').value + " cm^2";
-    console.log("STATUS: H: " + document.getElementById('hareal').value + " - L: " + document.getElementById('lareal').value);
-
     document.getElementById('arealresultat').value = answer;
 }
 
-function Calculate2nd() {
-    av = document.getElementById('a1').value;
-    bv = document.getElementById('b1').value;
-    cv = document.getElementById('c1').value;
+function AndengradsUdregn() {
+    // RESET
+    document.getElementById('andengradsresultat_x1').style.display = "block";
+    document.getElementById('andengradsresultat_x2').style.display = "block";
+
+
+
+    var a = document.getElementById('atal').value;
+    var b = document.getElementById('btal').value;
+    var c = document.getElementById('ctal').value;
+
+    console.log(a, b, c);
+
     
-    var D = (bv * bv) - 4 * av * cv;
-    if (D < 0) {
-        var x1 = "Diskriminant er i minus";
-        var x2 = "Diskriminant er i minus";
-        document.title = "x1: Fejl, x2: Fejl";
+    var D = (b*b) - 4*a*c
+    document.getElementById('andengradsdiskriminant').value = D;
+    // Hvis D er 0
+    if (D === 0) {
+        // Fjerner 1 rod, da diskriminanten er 0
+        document.getElementById('andengradsresultat_x2').style.display = "none"; 
+
+        // Regner roden ud
+        var rod = -b / (a*2)
+        document.getElementById('andengradsresultat_x1').value = rod;
+
     }
+    // Hvis D er mindre end 0
+    else if (D < 0) {
+        // Fjerner røderne, da diskriminaten er i minus
+        document.getElementById('andengradsresultat_x1').style.display = "none"; 
+        document.getElementById('andengradsresultat_x2').style.display = "none"; 
+    }
+    // Hvis D er mere end 0
     else if (D > 0) {
-        var Dsqrt = Math.sqrt(D);
-        var x1 = (-bv - Dsqrt) / 2*av;
-        var x2 = (-bv + Dsqrt) / 2*av;
-        document.title = "x1: " + x1 + ", x2: " + x2;
+        // Regner røderne ud
+        var Dk = Math.sqrt(D);
+        var rod_1 = (-b - Dk) / (2*a);
+        var rod_2 = (-b - Dk) / (2*a);
+
+        document.getElementById('andengradsresultat_x1').value = rod_1; 
+        document.getElementById('andengradsresultat_x2').value = rod_2; 
     }
-    else {
-        var x1 = "Fejl, D er 0";
-        var Dsqrt = Math.sqrt(D);
-        var x2 = (-bv + Dsqrt) / (2*av);
-        document.title = "x1: Fejl, x2: " + x2;
-    }
-    
-    document.getElementById('Diskriminant').innerHTML = "Diskriminaten er: <strong>" + D + "</strong>";
-    document.getElementById('xv1').innerHTML = "Rod 1 er: <strong>" + x1 + "</strong>";
-    document.getElementById('xv2').innerHTML = "Rod 2 er: <strong>" + x2 + "</strong>";
 }
+
+
+
+
+document.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        var title = document.title;
+        if (title === "Lommeregner - andengradsligning") {
+            AndengradsUdregn();
+        }
+        else if (title === "Lommeregner - areal") {
+            ArealUdregn();
+        }
+    }
+});
