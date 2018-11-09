@@ -1,11 +1,10 @@
 body {
-    margin: 0 10%;
-    background-color: black;
+    margin: 0;
 
 }
 
 #sitecontent {
-    margin: 0;
+    margin: 0 12%;
     height: 1000px;
     background-color: white;
 }
@@ -22,9 +21,9 @@ body {
 
 #footer {
     position: fixed;
-    left: 10%;
+    left: 0;
     bottom: 0;
-    width: 80%;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-color: #999;
@@ -32,7 +31,6 @@ body {
 }
 
 #footer p {
-    
     padding: 10px 0;
     margin: 0 10px 0 0;
     font-size: 16px;
