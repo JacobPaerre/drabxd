@@ -54,6 +54,26 @@ header p {
     padding: 5px 20px;
 } 
 
+#inputandengrads {
+    display: inline;
+    background-color: lightgray;
+    position: absolute;
+    padding: 10px 30px;
+}
+
+#inputandengrads input {
+    padding: 5px;
+}
+
+#inputareal input {
+    padding: 5px;
+}
+
+
+
+.udregn_knap {
+    font-size: 20px;
+}
 
 
 
