@@ -12,11 +12,18 @@ body {
 #sitecontent h1 {
     font-family: bookman old style;
 }
+#sitecontent h2 {
+    font-family: bookman old style;
+}
 
 #sitecontent p {
     font-size: 20px;
     font-family: bookman old style;
     line-height: 0.2;
+}
+#sitecontent li {
+    font-size: 20px;
+    font-family: bookman old style;
 }
 
 #footer {
