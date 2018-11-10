@@ -75,16 +75,68 @@ header p {
 #inputareal input {
     padding: 5px;
 }
-
-
-
 .udregn_knap {
     font-size: 20px;
 }
+#headercontent {
+    poistion: relative;
+    display: inline;
+}
 
+#search input[type="text"]:hover {
+    width:200px;
+}
 
+#search input[type="text"] {
+    background: #fff url("http://3.bp.blogspot.com/-uYZni0pIn-E/T-xY2vVu_-I/AAAAAAAACUY/ZMfR3_BvRFE/s1600/SEARCH_32x32-32.png")no-repeat center left;
+    font-size: 13px;
+    color: #222;
+    width: 200px;
+    padding: 10px 0px 11px 35px;
+    z-index: 9;
+    border: 1px solid #fff;
+    margin-bottom: -1px;
+    position: absolute;
+    top: 0px;
+    right:27px;
+    font-family: bookman old style;
+}
 
+#feedbackform input {
+    padding: 10px;
+}
 
+.feedbackcomment {
+    height: 100px;
+}
+
+textarea .form-control {
+    height: auto;
+}
+
+textarea {
+    overflow: auto;
+}
+
+.form-control {
+    display: block;
+    width: 30%;
+    height: 100px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-family: bookman old style;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
 
 
 
@@ -95,4 +147,3 @@ header p {
         
     }
 }
-
