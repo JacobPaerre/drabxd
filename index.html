@@ -3,21 +3,49 @@
 <head>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/dropdown.css">
+    <script src="scripts/tjekform.js"></script>
     <meta charset="utf-8">
-    <title> </title>
+    <title>Jacob's hjemmeside</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
-        <div class="dropdown">
-            <button class="dropbtn">Menu</button>
-            <div class="dropdown-content">
-                <a href="#">Startside</a>
-                <a href="udregner/areal.html">Udregn areal</a>
-                <a href="udregner/andengradsligning.html">Udregn andengradsligninger</a>
+        <div id="headercontent">
+            <div class="dropdown">
+                <button class="dropbtn">Menu</button>
+                <div class="dropdown-content">
+                    <a href="#">Startside</a>
+                    <a href="udregner/areal.html">Udregn areal</a>
+                    <a href="udregner/andengradsligning.html">Udregn andengradsligninger</a>
+                </div>
             </div>
+            <form action='http://www.google.com/search?q=' id='search' method='get' target="_blank">
+                <input name='q' placeholder='Google søgning' size='40' type='text'/>
+            </form>
         </div>
     </header>
+
+    <div id="sitecontent">
+        <div id="feedbackform">
+            <h1>Feedback</h1>
+            <form action="mailto:Jacobvp0804@live.dk" method="post" enctype="text/plain">
+                <p>Dit navn:</p>
+                <br>
+                <input type="text" name="name" placeholder="Lars Larsen">
+                <br>
+                <br>
+                <p>Din Email:</p>
+                <input type="text" name="mail" placeholder="Lars@larsen.dk">
+                <br>
+                <br>
+                <p>Din feedback</p>
+                <textarea class="form-control" type="textarea" name="comments" id="comments" placeholder="Jeg kunne godt tænke mig..." maxlength="6000" rows="7" required></textarea><br><br>
+                <input type="button" value="Send feedback (disabled)">
+                <br>
+                <input type="reset" value="Reset form">
+            </form>
+        </div>
+    </div>
 
 <div id="footer">
     <p style="text-align: center;">Jacob © 2018</p>
